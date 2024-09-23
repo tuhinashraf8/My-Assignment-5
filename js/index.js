@@ -139,3 +139,9 @@ function doneteBtnForOrphans() {
     historyMainContenar.insertBefore(historyContenar, historyMainContenar.firstChild)
 
 }
+
+
+
+function dddd(event){
+    console.log(event.innerText)
+}
