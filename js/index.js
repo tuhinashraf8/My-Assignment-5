@@ -1,23 +1,21 @@
+                 // donate for nuakhali //
 
-
-// <!-- donate for nuakhali -->
-
-function donateBtnNuakhali() {
-    const myWaletEl = parseFloat(document.getElementById("my-walet").innerText);
-    const totalDonationForN = parseFloat(document.getElementById("total-donation-for-n").innerText);
-    const donation = parseFloat(document.getElementById("donations").value);
+document.getElementById("btn-nuakhali").addEventListener("click", function () {
+    const myWallet = getInputFieldValueById1('my-walet')
+    const MyDonation = getInputFieldValueById('donations')
+    const totalDonation = getInputFieldValueById1('donate-for-nuakhali')
     const modal = document.getElementById('my_modal_5');
 
-    if (donation <= 0 || isNaN(donation)) {
+    if (MyDonation <= 0 || isNaN(MyDonation)) {
         return alert("plz batpari koiren na ")
     }
     modal.showModal();
     // total donation part //
-    const totalDonationForNu = totalDonationForN + donation;
-    const totalDonationForNua = document.getElementById("total-donation-for-n");
+    const totalDonationForNu = totalDonation + MyDonation;
+    const totalDonationForNua = document.getElementById("donate-for-nuakhali");
     totalDonationForNua.innerText = totalDonationForNu.toFixed(2);
     // my wallent part //
-    const myWaletElement = myWaletEl - donation;
+    const myWaletElement = myWallet - MyDonation;
     const totalMymonyInWalet = document.getElementById("my-walet");
     totalMymonyInWalet.innerText = myWaletElement.toFixed(2);
 
@@ -26,34 +24,33 @@ function donateBtnNuakhali() {
     historyContenar.className =
         "mt-6 rounded-2xl border-solid border-2 bg-lime-400 p-8";
     historyContenar.innerHTML = `
-    <h3 class="font-bold">${donation} Taka is Donated for Flood at Noakhali, Bangladesh</h3>
-        <p>${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} (Bangladesh Standard Time)</p>
-    `
+<h3 class="font-bold">${MyDonation} Taka is Donated for Flood at Noakhali, Bangladesh</h3>
+    <p>${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} (Bangladesh Standard Time)</p>
+`
     const historyMainContenar = document.getElementById("history-contenar")
     historyMainContenar.insertBefore(historyContenar, historyMainContenar.firstChild)
 
+})
 
-}
+                    // donate for feni //
 
-// <!-- donation for feni -->
-
-function doneteBtnForFeni() {
-    const myWaletEl = parseFloat(document.getElementById("my-walet").innerText);
-    const donateforfeni = parseFloat(document.getElementById("donate-for-feni").innerText)
-    const donation2 = parseFloat(document.getElementById("donations2").value);
+document.getElementById("btn-feni").addEventListener("click", function () {
+    const myWallet = getInputFieldValueById1('my-walet')
+    const MyDonation = getInputFieldValueById('donations2')
+    const totalDonation = getInputFieldValueById1('donate-for-feni')
     const modal = document.getElementById('my_modal_5');
 
-    if (donation2 <= 0 || isNaN(donation2)) {
+    if (MyDonation <= 0 || isNaN(MyDonation)) {
         return alert("plz batpari koiren na ")
     }
     modal.showModal();
     // total donation part //
-    const totalDonationForFeni = donateforfeni + donation2;
+    const totalDonationForFeni = totalDonation + MyDonation;
     const setTotalDonationForFeni = document.getElementById("donate-for-feni");
     setTotalDonationForFeni.innerText = totalDonationForFeni.toFixed(2)
 
     // my wallent part //
-    const myWaletElement = myWaletEl - donation2;
+    const myWaletElement = myWallet - MyDonation;
     const totalMymonyInWalet = document.getElementById("my-walet");
     totalMymonyInWalet.innerText = myWaletElement.toFixed(2);
 
@@ -62,33 +59,32 @@ function doneteBtnForFeni() {
     historyContenar.className =
         "mt-6 rounded-2xl border-solid border-2 bg-lime-400 p-8";
     historyContenar.innerHTML = `
-    <h3 class="font-bold">${donation2} Taka is Donated for Flood at feni, Bangladesh</h3>
-        <p>${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} (Bangladesh Standard Time)</p>
-    `
+<h3 class="font-bold">${MyDonation} Taka is Donated for Flood at feni, Bangladesh</h3>
+    <p>${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} (Bangladesh Standard Time)</p>
+`
     const historyMainContenar = document.getElementById("history-contenar")
     historyMainContenar.insertBefore(historyContenar, historyMainContenar.firstChild)
+})
 
-}
+                // donate for quota //
 
-// <!-- donation for quota movement freedom fighter -->
-
-function doneteBtnForQuota() {
-    const myWaletEl = parseFloat(document.getElementById("my-walet").innerText);
-    const donateforQuota = parseFloat(document.getElementById("donate-for-quota").innerText)
-    const donation3 = parseFloat(document.getElementById("donations3").value);
+document.getElementById("btn-quota").addEventListener("click", function () {
+    const myWallet = getInputFieldValueById1('my-walet')
+    const MyDonation = getInputFieldValueById('donations3')
+    const totalDonation = getInputFieldValueById1('donate-for-quota')
     const modal = document.getElementById('my_modal_5');
 
-    if (donation3 <= 0 || isNaN(donation3)) {
+    if (MyDonation <= 0 || isNaN(MyDonation)) {
         return alert("plz batpari koiren na ")
     }
     modal.showModal();
     // total donation part //
-    const totalDonationForQuota = donateforQuota + donation3;
+    const totalDonationForQuota = totalDonation + MyDonation;
     const setTotalDonationForQuota = document.getElementById("donate-for-quota");
     setTotalDonationForQuota.innerText = totalDonationForQuota.toFixed(2)
 
     // my wallent part //
-    const myWaletElement = myWaletEl - donation3;
+    const myWaletElement = myWallet - MyDonation;
     const totalMymonyInWalet = document.getElementById("my-walet");
     totalMymonyInWalet.innerText = myWaletElement.toFixed(2);
 
@@ -97,33 +93,33 @@ function doneteBtnForQuota() {
     historyContenar.className =
         "mt-6 rounded-2xl border-solid border-2 bg-lime-400 p-8";
     historyContenar.innerHTML = `
-    <h3 class="font-bold">${donation3} Taka is Donated for quota movement freedom fighter, Bangladesh</h3>
-        <p>${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} (Bangladesh Standard Time)</p>
+    <h3 class="font-bold">${MyDonation} Taka is Donated for quota movement freedom fighter, Bangladesh</h3>
+    <p>${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} (Bangladesh Standard Time)</p>
     `
     const historyMainContenar = document.getElementById("history-contenar")
     historyMainContenar.insertBefore(historyContenar, historyMainContenar.firstChild)
+})
 
-}
+                // donate for orphans  //
 
-// <!-- donate for orphans -->
-
-function doneteBtnForOrphans() {
-    const myWaletEl = parseFloat(document.getElementById("my-walet").innerText);
-    const donateforOrphans = parseFloat(document.getElementById("donate-for-orphans").innerText)
-    const donation4 = parseFloat(document.getElementById("donations4").value);
+    document.getElementById("btn-orphans").addEventListener("click", function () {
+    const myWallet = getInputFieldValueById1('my-walet')
+    const MyDonation = getInputFieldValueById('donations4')
+    const totalDonation = getInputFieldValueById1('donate-for-orphans')
     const modal = document.getElementById('my_modal_5');
 
-    if (donation4 <= 0 || isNaN(donation4)) {
+    if (MyDonation <= 0 || isNaN(MyDonation)) {
         return alert("plz batpari koiren na ")
     }
     modal.showModal();
+
     // total donation part //
-    const totalDonationForOrphans = donateforOrphans + donation4;
+    const totalDonationForOrphans = totalDonation + MyDonation;
     const setTotalDonationForOrphans = document.getElementById("donate-for-orphans");
     setTotalDonationForOrphans.innerText = totalDonationForOrphans.toFixed(2)
 
     // my wallent part //
-    const myWaletElement = myWaletEl - donation4;
+    const myWaletElement = myWallet - MyDonation;
     const totalMymonyInWalet = document.getElementById("my-walet");
     totalMymonyInWalet.innerText = myWaletElement.toFixed(2);
 
@@ -132,16 +128,12 @@ function doneteBtnForOrphans() {
     historyContenar.className =
         "mt-6 rounded-2xl border-solid border-2 bg-lime-400 p-8";
     historyContenar.innerHTML = `
-    <h3 class="font-bold">${donation4} Taka is Donated for Orphans Bangladesh</h3>
+    <h3 class="font-bold">${MyDonation} Taka is Donated for Orphans Bangladesh</h3>
         <p>${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} (Bangladesh Standard Time)</p>
     `
     const historyMainContenar = document.getElementById("history-contenar")
     historyMainContenar.insertBefore(historyContenar, historyMainContenar.firstChild)
-
-}
-
+    })
 
 
-function dddd(event){
-    console.log(event.innerText)
-}
+
