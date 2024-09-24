@@ -38,22 +38,88 @@
         <input type="radio" name="my-accordion-2" checked="checked" />
         <div class="collapse-title text-xl font-medium">what is the Document object Model (DOM)</div>
         <div class="collapse-content">
-          <p>Ans.</p>
+          <p>Ans. <span class="font-bold">(DOM)</span> হলো 
+           ‍<span class="text-red-700">D</span>ocument
+            <span class="text-red-700">O</span>bjects
+            <span class="text-red-700">M</span>odel এর সংক্ষিপ্ত রূপ
+            যদি ভেঙে ভেঙে বলি তাহলে এভাবে বলা যায় HTMLপেজ হল একটি Document এবং HTML এর ভিতরে থাকা elements  গুলো হলো  Objects আর এই Objects গুলোর মধ্যে  যে গাছের লতা পাতার ন্যয় ছড়িয়ে আছে সেটাকে বলে Mode .<div class="br"></div>
+            সোজা বাংলায় বলা যেতে পারে <span class="font-bold">(DOM)</span> হলো একটি গাছের স্ট্রাকচারে মত শেকর থেকে শুরু করে অনেক শাখা প্রশাখা ছড়িয়েছে। তবে এটার শেকর টা উপরের দিকে।<br>
+            <span class="font-bold">(DOM)</span> এর মাধ্যমে আমরা একদম শেকর থেকে শুরু করে গাছের প্রতিটি পাতায় পাতায়  আলাদা আলাদা ভাবে যেতে পারি এবং সেটায় একটি নির্দিষ্ট আইডি ব্যবহার করে জাভাস্ক্রিপ্ট এর মাধ্যমে  তার মাঝে বিভিন্ন কিছু করতে পারি। যেমন জাভাস্ক্রিপ্ট ব্যবহার করে ওয়েব পেজের বিভিন্ন এলিমেন্টকে পরিবর্তন, যোগ বা মুছে ফেলতে পারি। উদাহরণস্বরূপ, আপনি একটি বাটনে ক্লিক করলে একটি প্যারাগ্রাফের টেক্সট পরিবর্তন করতে পারেন। সেটার মান বের করতে পারেন , style পরিবর্তন করতে পারেন ইত্যাদী। <br>
+            সুতরাং ‍আমরা বলতে পাড়ি
+            Document Object Model (DOM) হলো একটি প্রোগ্রামিং ইন্টারফেস যা HTML এবং XML ডকুমেন্টের জন্য ব্যবহৃত হয়। এটি একটি ওয়েব পেজের কন্টেন্ট, স্ট্রাকচার এবং স্টাইলকে ডাইনামিক্যালি অ্যাক্সেস এবং আপডেট করতে সাহায্য করে।
+            </p>
         </div>
       </div>
       <div class="collapse collapse-arrow bg-base-200 border-solid border-2 py-3 my-2 ">
         <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl font-medium">How do you select Element From The Dom</div>
         <div class="collapse-content">
-          <p>Ans.</p>
+          <p>Ans. We can select Element From DOM in 5 common wey 
+            <br>
+            <br>
+            <table class="min-w-full border-collapse border border-gray-200">
+              <thead>
+                <tr >
+                  <th class="border border-gray-300 px-4 py-2 w-1/5">sirial number</th>
+                  <th class="border border-gray-300 px-4 py-2 w-2/5">way to get element</th>
+                  <th class="border border-gray-300 px-4 py-2 w-2/5">example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border border-gray-300 px-4 py-2">1</td>
+                  <td class="border border-gray-300 px-4 py-2">By ID:</td>
+                  <td class="border border-gray-300 px-4 py-2">const element = document.getElementById("elementId");</td>
+                </tr>
+                <tr>
+                  <td class="border border-gray-300 px-4 py-2">2</td>
+                  <td class="border border-gray-300 px-4 py-2">By Class Name:</td>
+                  <td class="border border-gray-300 px-4 py-2">const element = document.getElementById("elementId");</td>
+                </tr>
+                <tr>
+                  <td class="border border-gray-300 px-4 py-2">3</td>
+                  <td class="border border-gray-300 px-4 py-2">By Tag Name:</td>
+                  <td class="border border-gray-300 px-4 py-2">const elements = document.getElementsByTagName("tagName");</td>
+                </tr>
+                <tr>
+                  <td class="border border-gray-300 px-4 py-2">4</td>
+                  <td class="border  border-gray-300 px-4 py-2">By Query Selector:</td>
+                  <td class="border border-gray-300 px-4 py-2">const element = document.querySelector(".className");</td>
+                </tr>
+                <tr>
+                  <td class="border border-gray-300 px-4 py-2">5</td>
+                  <td class="border  border-gray-300 px-4 py-2">By Query Selector All:</td>
+                  <td class="border border-gray-300 px-4 py-2">const elements = document.querySelectorAll(".className");</td>
+                </tr>
+                <tr>
+                  <td class="border border-gray-300 px-4 py-2">6</td>
+                  <td class="border border-gray-300 px-4 py-2">By Name Attribute:</td>
+                  <td class="border border-gray-300 px-4 py-2">const elements = document.querySelectorAll(".className");</td>
+                </tr>
+                
+              </tbody>
+            </table>
         </div>
       </div>
       <div class="collapse collapse-arrow bg-base-200 border-solid border-2 py-3 my-2">
         <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the dom, and Why is
-          it useful?</div>
+        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the dom, and Why is it useful?</div>
         <div class="collapse-content">
-          <p>Ans.</p>
+          <p>Ans. Event  হলো কোন একটা action যেটার মাধ্যমে ব্রাউজারের বিভিন্ন কার্যসম্পাদন করা যায়
+            প্রায় ৮০ ৯০ টার মতো Event আছে তবে এর মধ্যে সবচাইতে কমন Event হলো ক্লিক
+            ডমের মধ্যে addEventListener  মাধ্যমে বিভিন্য ধরনের Event যোগ করা যায় <br>
+            
+            
+            Event delegation একটি Action যেটার মাধ্যমে DOM এর উচ্চ স্তরে Event হ্যান্ডেল করা যায়। এবং এর মাধ্যমে  প্রতিটি এলিমেন্টে Event Listener যোগ না করে একটি parent এলিমেন্টে Event Listener যোগ করে  ইভেন্ট বাবলিং এর মাধ্যমে তার Child গুলোকে নিয়ন্ত্রন করা যায় । <br>
+            
+            <br>
+            
+            এইটা ইউসফুল হবার কারণ
+            <br>
+            
+            1= যখন অনেক Element থাকে তখন এটির মাধ্যমে  Event Listener সংখ্যা কমিয়ে আনা যায় এবং পারফরম্যান্সকে  উন্নত করে।<br>
+            2= ডাইনামিক কন্টেন্টে ইভেন যোগ করে বাকি গুলোকে হেন্ডেল করা যায় । যার ফলে  নতুন যোগ করা এলিমেন্টগুলির জন্য আলাদা Event Listener যোগ করার প্রয়োজন হয় না।<br>
+            3=কোডকে সহজ এবং পরিষ্কার রাখে, কারণ ইভেন্টগুলি কেন্দ্রীয়ভাবে পরিচালিত হয় যার ফলে অনেক কোড লোখা লাগে না।</p>
         </div>
       </div>
       <div class="collapse collapse-arrow bg-base-200 border-solid border-2 py-3 my-2">
@@ -61,10 +127,74 @@
         <div class="collapse-title text-xl font-medium">How do you Manipulate an element's attributes and style using
           the dom</div>
         <div class="collapse-content">
-          <p>Ans.</p>
+          <p>
+            Ans. we can use  three methods in tow <br>
+                  The three methods is 1: set   2: get    3: remove <br>
+                  And the tow is 1: Attribute    2: style property <br>
+                  <span class="font-bold text-xl">Example </span> 
+          </p>
+          <table class="min-w-full border-collapse border border-gray-200">
+            <thead>
+              <tr >
+                <th class="border border-gray-300 px-4 py-2 w-1/5">sirial number</th>
+                <th class="border border-gray-300 px-4 py-2 w-2/5">way to get element</th>
+                <th class="border border-gray-300 px-4 py-2 w-2/5">example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-gray-300 px-4 py-2">1</td>
+                <td class="border border-gray-300 px-4 py-2">Setting an Attribute:</td>
+                <td class="border border-gray-300 px-4 py-2">const element = document.getElementById("myElement");
+                  const className = element.getAttribute("class");
+                  console.log(className);
+                  </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 px-4 py-2">2</td>
+                <td class="border border-gray-300 px-4 py-2">Getting an Attribute:</td>
+                <td class="border border-gray-300 px-4 py-2">const element = document.getElementById("myElement");
+                  const className = element.getAttribute("class");
+                  console.log(className);
+                  </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 px-4 py-2">3</td>
+                <td class="border border-gray-300 px-4 py-2">Removing an Attribute:</td>
+                <td class="border border-gray-300 px-4 py-2">const element = document.getElementById("myElement");
+                  element.removeAttribute("class");
+                  </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 px-4 py-2">4</td>
+                <td class="border  border-gray-300 px-4 py-2">Setting a Style:</td>
+                <td class="border border-gray-300 px-4 py-2">const element = document.getElementById("myElement");
+                  element.style.color = "blue";
+                  element.style.backgroundColor = "lightgray";
+                  </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 px-4 py-2">5</td>
+                <td class="border  border-gray-300 px-4 py-2">Getting a Style:</td>
+                <td class="border border-gray-300 px-4 py-2">const element = document.getElementById("myElement");
+                  const color = element.style.color;
+                  console.log(color);
+                  </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 px-4 py-2">6</td>
+                <td class="border border-gray-300 px-4 py-2">Removing a Style:</td>
+                <td class="border border-gray-300 px-4 py-2">const element = document.getElementById("myElement");
+                  element.style.color = "";
+                  </td>
+              </tr>
+              
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
+    
 
   </section>
   <script src="./js/index.js"></script>
