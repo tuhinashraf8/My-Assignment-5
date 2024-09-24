@@ -5,6 +5,8 @@ document.getElementById("btn-nuakhali").addEventListener("click", function () {
     const MyDonation = getInputFieldValueById('donations')
     const totalDonation = getInputFieldValueById1('donate-for-nuakhali')
     const modal = document.getElementById('my_modal_5');
+    document.getElementById('donations').value = "";
+    
 
     if (MyDonation <= 0 || isNaN(MyDonation)) {
         return alert("plz batpari koiren na ")
@@ -39,6 +41,7 @@ document.getElementById("btn-feni").addEventListener("click", function () {
     const MyDonation = getInputFieldValueById('donations2')
     const totalDonation = getInputFieldValueById1('donate-for-feni')
     const modal = document.getElementById('my_modal_5');
+    document.getElementById('donations2').value = "";
 
     if (MyDonation <= 0 || isNaN(MyDonation)) {
         return alert("plz batpari koiren na ")
@@ -73,6 +76,7 @@ document.getElementById("btn-quota").addEventListener("click", function () {
     const MyDonation = getInputFieldValueById('donations3')
     const totalDonation = getInputFieldValueById1('donate-for-quota')
     const modal = document.getElementById('my_modal_5');
+    document.getElementById('donations3').value = "";
 
     if (MyDonation <= 0 || isNaN(MyDonation)) {
         return alert("plz batpari koiren na ")
@@ -107,6 +111,7 @@ document.getElementById("btn-quota").addEventListener("click", function () {
     const MyDonation = getInputFieldValueById('donations4')
     const totalDonation = getInputFieldValueById1('donate-for-orphans')
     const modal = document.getElementById('my_modal_5');
+    document.getElementById('donations4').value = "";
 
     if (MyDonation <= 0 || isNaN(MyDonation)) {
         return alert("plz batpari koiren na ")

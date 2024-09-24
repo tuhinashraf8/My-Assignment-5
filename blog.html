@@ -1,65 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blog</title>
-     <!-- tailwind and daisyui cdn -->
-     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-     <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>blog</title>
+  <!-- tailwind and daisyui cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
   <section class="w-auto sticky top-0">
     <nav class="flex justify-around bg-orange-100 pt-5 pb-9">
-        <button onclick="window.location.href='index.html'" class="btn bg-lime-400 lg:px-8 lg:font-bold text-black text-xl">
-            Home
-        </button>
-        <div class="lg:flex grid place-items-center senter gap-1 lg:gap-3 items-center lg:font-bold text-black lg:text-xl">
-            <img src="./assets/logo.png" alt="">
-            <h3>Donate Bangladesh</h3>
-        </div>
-        <div class="flex  items-center gap-1 lg:gap-3 font-bold text-black lg:text-xl">
-            <img src="./assets/coin.png" alt="">
-            <h3>
-                <span id="my-walet">5500</span>
-                <span> BDT</span></h3>
-        </div>
+      <button onclick="window.location.href='index.html'"
+        class="btn bg-lime-400 lg:px-8 lg:font-bold text-black text-xl">
+        Home
+      </button>
+      <div
+        class="lg:flex grid place-items-center senter gap-1 lg:gap-3 items-center lg:font-bold text-black lg:text-xl">
+        <img src="./assets/logo.png" alt="">
+        <h3>Donate Bangladesh</h3>
+      </div>
+      <div class="flex  items-center gap-1 lg:gap-3 font-bold text-black lg:text-xl">
+        <img src="./assets/coin.png" alt="">
+        <h3>
+          <span id="my-walet">5500</span>
+          <span> BDT</span>
+        </h3>
+      </div>
     </nav>
-</section>
-<section class="w-11/12 m-auto">
-  <h1 class="font-bold text-6xl m-5">Important FAQ</h1>
-  <div>
-    <div class="collapse collapse-arrow bg-base-200 border-solid border-2 py-3 my-2">
-      <input type="radio" name="my-accordion-2" checked="checked" />
-      <div class="collapse-title text-xl font-medium">what is the Document object Model (DOM)</div>
-      <div class="collapse-content">
-        <p>Ans.</p>
+  </section>
+  <section class="w-11/12 m-auto">
+    <h1 class="font-bold text-6xl m-5">Important FAQ</h1>
+    <div>
+      <div class="collapse collapse-arrow bg-base-200 border-solid border-2 py-3 my-2">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">what is the Document object Model (DOM)</div>
+        <div class="collapse-content">
+          <p>Ans.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200 border-solid border-2 py-3 my-2 ">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">How do you select Element From The Dom</div>
+        <div class="collapse-content">
+          <p>Ans.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200 border-solid border-2 py-3 my-2">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the dom, and Why is
+          it useful?</div>
+        <div class="collapse-content">
+          <p>Ans.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200 border-solid border-2 py-3 my-2">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">How do you Manipulate an element's attributes and style using
+          the dom</div>
+        <div class="collapse-content">
+          <p>Ans.</p>
+        </div>
       </div>
     </div>
-    <div class="collapse collapse-arrow bg-base-200 border-solid border-2 py-3 my-2 ">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title text-xl font-medium">How do you select Element From The Dom</div>
-      <div class="collapse-content">
-        <p>Ans.</p>
-      </div>
-    </div>
-    <div class="collapse collapse-arrow bg-base-200 border-solid border-2 py-3 my-2">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title text-xl font-medium">What is event delegation in the context of the dom, and Why is it useful?</div>
-      <div class="collapse-content">
-        <p>Ans.</p>
-      </div>
-    </div>
-    <div class="collapse collapse-arrow bg-base-200 border-solid border-2 py-3 my-2">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title text-xl font-medium">How do you Manipulate an element's attributes and style using the dom</div>
-      <div class="collapse-content">
-        <p>Ans.</p>
-      </div>
-    </div>
-  </div>
 
-</section>
-<script src="./js/index.js"></script>
+  </section>
+  <script src="./js/index.js"></script>
 </body>
+
 </html>
